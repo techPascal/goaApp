@@ -318,10 +318,6 @@ main {
 }
 
 @media (max-width: 480px) {
-    .container {
-        margin-left: 10px;
-    }
-
     .main-body {
         width: 100%;
     }

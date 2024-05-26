@@ -9,7 +9,7 @@ import Activity from './views/Activity.vue'
 import Promotion from './views/Promotion.vue'
 import Wallet from './views/Wallet.vue'
 import Account from './views/Account.vue'
-import AllLotteryGames from './views/Home/AllLotteryGames.vue'
+import AllLonpmtteryGames from './views/Home/AllLotteryGames.vue'
 
 const routes = [
     { path: '/', name: 'home', component: Home },
@@ -17,7 +17,7 @@ const routes = [
     { path: '/promotion', name: 'promotion', component: Promotion },
     { path: '/wallet', name: 'wallet', component: Wallet },
     { path: '/account', name: 'account', component: Account },
-    { path: '/home/lotterygames', name: 'lotterygames', component:AllLotteryGames}
+    { path: '/home/lotterygames', name: 'lotterygames', component: AllLonpmtteryGames}
   ]
   
   const router = createRouter({
