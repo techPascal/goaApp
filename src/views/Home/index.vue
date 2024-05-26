@@ -1,9 +1,9 @@
 <script setup>
-import Header from '../components/Header.vue'
-import Carousel from '../components/Carousel.vue'
-import Notificationbar from '../components/Notificationbar.vue'
-import Popular from '../components/Popular.vue'
-import Newinfo from '../components/Newinfo.vue'
+import Header from '@/components/Header.vue'
+import Carousel from '@/components/pages/HomePage/Carousel.vue'
+import Notificationbar from '@/components/pages/HomePage/Notificationbar.vue'
+import Popular from '@/components/pages/HomePage/Popular.vue'
+import Newinfo from '@/components/pages/HomePage/Newinfo.vue'
 </script>
 
 <template>
