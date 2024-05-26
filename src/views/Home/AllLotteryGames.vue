@@ -58,7 +58,7 @@ import GameListHeader from "@/components/pages/HomePage/GameList/GameListHeader.
             </button>
           </div>
         </div>
-        <div class="w-full flex z-[10] p-[0px_20px_0px]">
+        <div class="w-full flex z-[10] p-[0px_20px]">
           <div class="w-full flex justify-center items-center p-[3px] bg-white rounded-[20px]">
             <div class="flex flex-col justify-center items-start p-[5px_20px]">
               <img
@@ -105,6 +105,9 @@ import GameListHeader from "@/components/pages/HomePage/GameList/GameListHeader.
               </p>
             </div>
           </div>
+        </div>
+        <div class="w-full flex z-[10] p-[0px_20px]">
+          <div class="how_play"></div>
         </div>
       </div>
     </div>
@@ -158,6 +161,10 @@ main {
   border-radius: 30px;
   padding: 5px 40px;
 }
+
+/* .how_play {
+  background-image: ;
+} */
 
 @media (max-width: 480px) {
   .main-body {
