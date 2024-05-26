@@ -1,5 +1,5 @@
 <template>
-    <footer class="navbar">
+    <footer class="navbar z-[50]">
         <img src="@/assets/tabbar.png" class="tabbar" />
         <div class="button-container">
             <button @click="goTo('home')" class="navbar-button" :class="{ 'active': activeButton === 'home' }" style="margin-left: 20px;">
