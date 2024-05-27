@@ -1,7 +1,7 @@
 <script setup>
 import GameListHeader from "@/components/pages/HomePage/GameList/GameListHeader.vue";
 import WalletSection from "@/components/pages/HomePage/GameList/WalletSection.vue";
-import NavigationBar from '@/components/pages/HomePage/NotificationBar.vue';
+import NavigationBar from '@/components/pages/HomePage/NavigationBar.vue';
 </script>
 
 <template>
