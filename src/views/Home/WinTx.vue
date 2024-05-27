@@ -1,7 +1,7 @@
 <script setup>
 import GameListHeader from "@/components/pages/HomePage/GameList/GameListHeader.vue";
 import WalletSection from "@/components/pages/HomePage/GameList/WalletSection.vue";
-import NavigationBar from '@/components/pages/HomePage/NavigationBar.vue';
+import NotificationBar from '@/components/pages/HomePage/NotificationBar.vue';
 </script>
 
 <template>
@@ -11,7 +11,7 @@ import NavigationBar from '@/components/pages/HomePage/NavigationBar.vue';
       <div class="container relative bg-white_1">
         <div class="game_background" />
         <WalletSection />
-        <NavigationBar />
+        <NotificationBar />
         <div class="w-full flex z-[10] p-[0px_15px]">
           <div
             class="w-full flex justify-center items-center p-[3px] bg-white rounded-[10px] white_shadow"
