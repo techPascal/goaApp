@@ -17,7 +17,7 @@
 <style scoped>
 
 .notification-bar {
-    background-color: white;
+    background-color: white !important;
     border-radius: 25px;
     display: flex;
     flex-direction: row;
@@ -27,6 +27,10 @@
     margin: 0px 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 38px;
+    z-index: 10;
+    overflow-y: hidden;
+    width: 95%;
+    margin: 0px 15px;
 }
 
 .notification-icon {
@@ -56,6 +60,11 @@
     font-weight: bold;
     font-size: 12px;
     height: 26px;
+    min-width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .detail-icon {
@@ -65,8 +74,9 @@
 }
 
 .detail-text {
+    font-size: 14px;
+    font-weight: 500;
     position: relative;
-    top: -2px;
 }
 
 @media (max-width: 320px) {
