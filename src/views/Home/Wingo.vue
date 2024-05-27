@@ -1,5 +1,7 @@
 <script setup>
 import GameListHeader from "@/components/pages/HomePage/GameList/GameListHeader.vue";
+import WalletSection from "@/components/pages/HomePage/GameList/WalletSection.vue";
+import Sound from "@/components/pages/HomePage/GameList/Sound.vue";
 </script>
 
 <template>
@@ -8,61 +10,15 @@ import GameListHeader from "@/components/pages/HomePage/GameList/GameListHeader.
       <GameListHeader />
       <div class="container relative bg-white_1">
         <div class="game_background" />
-        <div class="w-full p-[15px_15px_0px] flex">
-          <div
-            class="flex flex-col justify-start items-center w-full bg-white border border-white z-[10] rounded-[23px] p-[20px]"
-          >
-            <div>
-              <p class="font-bold text-[22px] text-black">₹0.00</p>
-            </div>
-            <div class="flex justify-center gap-[5px]">
-              <img
-                src="@/assets/gamelist/wallet.png"
-                alt="Left Icon"
-                class="w-[24px] h-[24px]"
-              />
-              <p class="text-black">Wallet balance</p>
-            </div>
-            <div class="flex justify-between w-full pt-[20px] game_top">
-              <button class="bg-blue text-white">Withdraw</button>
-              <button class="text-blue">Deposit</button>
-            </div>
-          </div>
-        </div>
-        <div class="w-full flex z-[10]">
-          <div
-            class="flex justify-between items-center gap-[5px] w-full h-[40px] p-[0px_10px] bg-white overflow-hidden rounded-full"
-          >
-            <button class="p-[5px]">
-              <img
-                src="@/assets/gamelist/wallet.png"
-                alt="Left Icon"
-                class="w-[24px] h-[24px]"
-              />
-            </button>
-            <p class="text-black">
-              Thank you for being a member of the GOA GAMES platform, we provide
-              many industry-leading
-              <!-- games. This is the world's leading gaming
-              platform. Try our lottery games. While enjoying the best gaming
-              experience, you can also join unlimited agents and earn money
-              without leaving your home. -->
-            </p>
-            <button>
-              <img
-                src="@/assets/gamelist/wallet.png"
-                alt="Left Icon"
-                class="w-[24px] h-[24px]"
-              />
-              <p class="text-black">Detail</p>
-            </button>
-          </div>
-        </div>
+        <WalletSection />
+        <Sound />
         <div class="w-full flex z-[10] p-[0px_15px]">
           <div
-            class="w-full flex justify-center items-center p-[3px] bg-white rounded-[20px] white_shadow"
+            class="w-full flex justify-center items-center p-[3px] bg-white rounded-[10px] white_shadow"
           >
-            <div class="flex flex-col justify-center items-start p-[5px_20px]">
+            <div
+              class="flex flex-col justify-center items-start p-[5px_20px] active_clock"
+            >
               <img
                 src="@/assets/gamelist/time-1b645da4.png"
                 alt="Left Icon"
@@ -349,7 +305,9 @@ import GameListHeader from "@/components/pages/HomePage/GameList/GameListHeader.
             class="w-full h-[76px] bg-white flex justify-center items-center gap-[15px]"
           >
             <button class="arrow_button"><</button>
-            <p class="text-[16px] text-bold"><span>1</span>/<span>1712</span></p>
+            <p class="text-[16px] text-bold">
+              <span>1</span>/<span>1712</span>
+            </p>
             <button class="arrow_button">></button>
           </div>
         </div>
@@ -396,14 +354,21 @@ main {
   left: 0;
 }
 
-.game_top button {
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  border-width: 1px;
-  border-color: #4784ff;
-  border-radius: 30px;
-  padding: 5px 40px;
+.active_clock {
+  background: -webkit-linear-gradient(
+    top,
+    #4da6ff 0%,
+    rgba(127, 220, 237, 0.5) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    #4da6ff 0%,
+    rgba(127, 220, 237, 0.5) 100%
+  );
+  box-shadow: inset 0 -0.02667rem 0.08rem #dbfaff,
+    inset 0 0.02667rem 0.08rem #dbfaff;
+  border-radius: 0.26667rem;
+  color: white !important;
 }
 
 .how_play {
