@@ -1,7 +1,7 @@
 <script setup>
 import GameListHeader from "@/components/pages/HomePage/GameList/GameListHeader.vue";
 import WalletSection from "@/components/pages/HomePage/GameList/WalletSection.vue";
-import Sound from "@/components/pages/HomePage/GameList/Sound.vue";
+import NavigationBar from '@/components/pages/HomePage/NotificationBar.vue';
 </script>
 
 <template>
@@ -11,7 +11,7 @@ import Sound from "@/components/pages/HomePage/GameList/Sound.vue";
       <div class="container relative bg-white_1">
         <div class="game_background" />
         <WalletSection />
-        <Sound />
+        <NavigationBar/>
         <div class="w-full flex z-[10] p-[0px_15px]">
           <div
             class="w-full flex justify-center items-center p-[3px] bg-white rounded-[10px] white_shadow"
@@ -228,7 +228,7 @@ import Sound from "@/components/pages/HomePage/GameList/Sound.vue";
           <div
             class="w-full h-[76px] bg-white flex justify-center items-center gap-[15px]"
           >
-            <button class="arrow_button"><</button>
+            <button class="arrow_button">{{'<'}}</button>
             <p class="text-[16px] text-bold">
               <span>1</span>/<span>1712</span>
             </p>
@@ -293,20 +293,6 @@ main {
     inset 0 0.02667rem 0.08rem #dbfaff;
   border-radius: 0.26667rem;
   color: white !important;
-}
-
-.how_play {
-  background-image: url("@/assets/diban-8d73e5a0.png");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  border: black;
-  border-width: 1px;
-  border-radius: 20px;
-  padding: 15px 10px;
 }
 
 .k3time_count div {

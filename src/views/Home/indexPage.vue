@@ -1,7 +1,7 @@
 <script setup>
 import Header from '@/components/Header.vue'
 import Carousel from '@/components/pages/HomePage/Carousel.vue'
-import Notificationbar from '@/components/pages/HomePage/Notificationbar.vue'
+import NotificationBar from '@/components/pages/HomePage/NotificationBar.vue'
 import Popular from '@/components/pages/HomePage/Popular.vue'
 import Newinfo from '@/components/pages/HomePage/Newinfo.vue'
 </script>
@@ -13,7 +13,7 @@ import Newinfo from '@/components/pages/HomePage/Newinfo.vue'
             <div class="container">
                 <Carousel/>
                 <div>
-                    <Notificationbar/>
+                    <NotificationBar/>
                     <div class="menu_box1">
                         <div class="menu_box1_item item1">
                             <div class="image-containera">
