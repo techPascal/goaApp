@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
   <div class="navbar">
     <img src="https://ossimg.goa999.vip//GoaGame/other/h5setting_20231005151012qocp.png" alt="Left Icon"

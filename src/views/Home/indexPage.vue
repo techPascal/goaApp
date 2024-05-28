@@ -1,5 +1,5 @@
 <script setup>
-import Header from '@/components/Header.vue'
+import Header from '@/components/HomeHeader.vue'
 import Carousel from '@/components/pages/HomePage/Carousel.vue'
 import NotificationBar from '@/components/pages/HomePage/NotificationBar.vue'
 import Popular from '@/components/pages/HomePage/Popular.vue'

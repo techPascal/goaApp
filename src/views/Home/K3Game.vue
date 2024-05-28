@@ -448,17 +448,6 @@ main {
   color: white;
 }
 
-.red_ball {
-  background: url(@/assets/gamelist/greenBall-fd34b99e.png) no-repeat center
-    center;
-  background-size: cover;
-}
-
-.green_ball {
-  background: url(@/assets/assets/redBall-fd34b99e.png) no-repeat center center;
-  background-size: cover;
-}
-
 .history_table {
   height: 42px;
   background: #4781ff;
